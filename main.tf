@@ -45,6 +45,7 @@ resource "aws_s3_bucket_acl" "bucket" {
   acl = "public-read"
 }
 
+/*
 resource "aws_s3_bucket_policy" "policy" {
   bucket = aws_s3_bucket.bucket.id
   policy = <<EOF
@@ -66,6 +67,7 @@ resource "aws_s3_bucket_policy" "policy" {
 }
 EOF
 }
+*/
 
 resource "aws_s3_object" "webapp" {
   acl          = "public-read"
